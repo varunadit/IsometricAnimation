@@ -74,6 +74,8 @@ struct IsometricAnimation: View {
                     .frame(width: 100, height: 100)
                 }
             }
+            .projectionEffect(.init(.init(1, 0.04, 0, 1, 0, 0)))
+
         }
         .onAppear{
             animateLogo1.toggle()
